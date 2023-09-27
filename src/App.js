@@ -8,6 +8,7 @@ import Mainboard from './pages/Mainboard';
 import AuthProvider from './context/auth';
 import ForgotPassword from './pages/auth/ForgotPassword';
 import ResetPassword from './pages/auth/ResetPassword';
+import Profile from './pages/profile/Profile';
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
           <Route path='/auth/forgot-password' element={<ForgotPassword />} />
           <Route path='/auth/reset-password' element={<ResetPassword />} />
           <Route path='/dashboard' element={<Mainboard />} />
+          <Route path='/user/profile/:id' element={<Profile />} />
         </Routes>
       </BrowserRouter>
     </AuthProvider>

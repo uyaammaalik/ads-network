@@ -32,10 +32,16 @@ const Navbar = () => {
                     <ul className='flex flex-col md:flex-row items-center'>
                         {user ? (<>
                             <li className="md:ml-16 mt-3 md:mt-0">
+                                <Link to={`/user/profile/${user.uid}`} className="hover:text-gray-300">
+                                    Profile
+                                </Link>
+                            </li>
+                            <li className="md:ml-16 mt-3 md:mt-0">
                                 <Link onClick={handleSignout} className="hover:text-gray-300">
                                     Logout
                                 </Link>
                             </li>
+
                         </>) : (<>
                             <li className="md:ml-16 mt-3 md:mt-0">
                                 <Link to="/auth/register" className="hover:text-gray-300">
@@ -51,8 +57,8 @@ const Navbar = () => {
 
                     </ul>
                 </div>
-            </nav>
-        </div>
+            </nav >
+        </div >
 
     )
 }
