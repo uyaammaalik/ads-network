@@ -37,6 +37,11 @@ const Navbar = () => {
                                 </Link>
                             </li>
                             <li className="md:ml-16 mt-3 md:mt-0">
+                                <Link to={`/sell`} className="hover:text-gray-300">
+                                    Sell
+                                </Link>
+                            </li>
+                            <li className="md:ml-16 mt-3 md:mt-0">
                                 <Link onClick={handleSignout} className="hover:text-gray-300">
                                     Logout
                                 </Link>

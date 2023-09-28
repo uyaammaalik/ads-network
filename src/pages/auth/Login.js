@@ -42,7 +42,7 @@ function Login() {
                 loading: false,
             })
 
-            navigate('/dashboard')
+            navigate('/dashboard', { replace: true })
 
         } catch (error) {
             setValues({ ...values, error: error.message, loading: false })
